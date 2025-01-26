@@ -1,17 +1,22 @@
 import React from 'react';
 
-const Navbar = () => {
+const Navbar = ({ onNavigate }) => {
   return (
     <nav
       className="navbar navbar-expand-lg navbar-light bg-light px-4 fixed-top"
       style={{
-        height: '5rem', // Increased height
-        borderBottom: '1px solid darkgray', // Horizontal line
+        height: '5rem',
+        borderBottom: '1px solid darkgray',
       }}
     >
       <div className="container-fluid">
-        <a className="navbar-brand" href="#" style={{ fontSize: '1.5rem' }}>
-          Trek-Ed {/* Replace this text with your logo image if you obtain one */}
+        <a
+          className="navbar-brand"
+          href="#"
+          style={{ fontSize: '1.5rem', cursor: 'pointer' }}
+          onClick={() => onNavigate('home')}
+        >
+          Trek-Ed
         </a>
         <button
           className="navbar-toggler"
@@ -27,12 +32,16 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#"
+              onClick={() => onNavigate('signup')}
+              >
                 Find Courses
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#"
+              onClick={() => onNavigate('signup')}
+              >
                 Find Work
               </a>
             </li>
@@ -48,11 +57,16 @@ const Navbar = () => {
               type="search"
               placeholder="Search"
               aria-label="Search"
-              style={{ maxWidth: '300px' }}
+              style={{ maxWidth: '200px' }}
             />
           </form>
           <button className="btn btn-outline-primary me-2">Log In</button>
-          <button className="btn btn-primary">Sign Up</button>
+          <button
+            className="btn btn-primary"
+            onClick={() => onNavigate('signup')}
+          >
+            Sign Up
+          </button>
         </div>
       </div>
     </nav>
