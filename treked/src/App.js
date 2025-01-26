@@ -4,6 +4,7 @@ import HomePage from './components/homepage.js';
 import SignUpPage from './components/signup1.js';
 import SignUpBox from './components/signup2.js';
 import LoginPage from './components/login.js'; // Import the login page component
+import AboutSection from './components/about.js';
 import './App.css';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         {currentPage === 'signup' && <SignUpPage onNavigate={handleNavigation} />}
         {currentPage === 'signup2' && <SignUpBox />}
         {currentPage === 'login' && <LoginPage onNavigate={handleNavigation} />} {/* Handle login page */}
+        {currentPage === 'about' && <AboutSection onNavigate={handleNavigation} />}
       </main>
     </div>
   );

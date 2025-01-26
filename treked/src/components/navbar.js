@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from './assets/logoo.png';
 
 const Navbar = ({ onNavigate }) => {
   return (
@@ -7,17 +8,16 @@ const Navbar = ({ onNavigate }) => {
       style={{
         height: '5rem',
         borderBottom: '1px solid darkgray',
+        zIndex: 50,
       }}
     >
       <div className="container-fluid">
-        <a
-          className="navbar-brand"
-          href="#"
-          style={{ fontSize: '1.5rem', cursor: 'pointer' }}
-          onClick={() => onNavigate('home')}
-        >
-          Trek-Ed
-        </a>
+          <img 
+            src={logo} 
+            alt="Trek-Ed Logo" 
+            style={{ height: '50px', marginRight: '10px' }}
+            onClick={() => onNavigate('home')}
+          />
         <button
           className="navbar-toggler"
           type="button"
@@ -32,21 +32,29 @@ const Navbar = ({ onNavigate }) => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link" href="#"
-              onClick={() => onNavigate('signup')}
+              <a
+                className="nav-link"
+                href="#"
+                onClick={() => onNavigate('signup')}
               >
                 Find Courses
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#"
-              onClick={() => onNavigate('signup')}
+              <a
+                className="nav-link"
+                href="#"
+                onClick={() => onNavigate('signup')}
               >
                 Find Work
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a
+                className="nav-link"
+                href="#"
+                onClick={() => onNavigate('about')}
+              >
                 About
               </a>
             </li>
@@ -60,9 +68,12 @@ const Navbar = ({ onNavigate }) => {
               style={{ maxWidth: '200px' }}
             />
           </form>
-          <button className="btn btn-outline-primary me-2"
-          onClick={() => onNavigate('login')}
-          >Log In</button>
+          <button
+            className="btn btn-outline-primary me-2"
+            onClick={() => onNavigate('login')}
+          >
+            Log In
+          </button>
           <button
             className="btn btn-primary"
             onClick={() => onNavigate('signup')}
