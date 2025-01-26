@@ -2,7 +2,7 @@ import React from 'react';
 import appleIcon from './assets/apple-logo.png';
 import googleIcon from './assets/google.png';
 
-const SignUpBox = () => {
+const SignUpBox = ({ onNavigate }) => {
   return (
     <div className="container vh-100 d-flex flex-column justify-content-center align-items-center"
     style={{paddingTop:'25rem'}}
@@ -90,7 +90,7 @@ const SignUpBox = () => {
 
         {/* Login Link */}
         <p className="text-center">
-          Already have an account? <a href="#" style={{ color: '#008CBA' }}>Login</a>
+          Already have an account? <a href="#" style={{ color: '#008CBA' }} onClick={() => onNavigate('login')}>Login</a>
         </p>
       </div>
     </div>

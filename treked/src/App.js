@@ -20,7 +20,7 @@ function App() {
       <main>
         {currentPage === 'home' && <HomePage onNavigate={handleNavigation} />}
         {currentPage === 'signup' && <SignUpPage onNavigate={handleNavigation} />}
-        {currentPage === 'signup2' && <SignUpBox />}
+        {currentPage === 'signup2' && <SignUpBox onNavigate={handleNavigation} />}
         {currentPage === 'login' && <LoginPage onNavigate={handleNavigation} />} {/* Handle login page */}
         {currentPage === 'about' && <AboutSection onNavigate={handleNavigation} />}
       </main>
