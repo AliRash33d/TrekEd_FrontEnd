@@ -48,7 +48,7 @@ const LoginPage = ({ onNavigate }) => {
             style={{ 
               border: '1px solid #ccc', 
               borderRadius: '30px', 
-              padding: '10px 20px' // Reduced padding to make the button less "fat"
+              padding: '10px 20px' 
             }}
           >
             <img src={appleIcon} alt="Apple Icon" style={{ width: '20px', marginRight: '10px' }} />
@@ -59,7 +59,7 @@ const LoginPage = ({ onNavigate }) => {
             style={{ 
               border: '1px solid #ccc', 
               borderRadius: '30px', 
-              padding: '10px 20px' // Reduced padding to make the button less "fat"
+              padding: '10px 20px' 
             }}
           >
             <img src={googleIcon} alt="Google Icon" style={{ width: '20px', marginRight: '10px' }} />

@@ -12,17 +12,31 @@ const SignUpBox = () => {
           Sign Up
         </h2>
 
-        {/* Apple and Google Buttons */}
-        <div className="d-flex flex-column mb-4">
-          <button className="btn btn-outline-dark mb-2 d-flex align-items-center justify-content-center rounded-pill">
-            <img src={appleIcon} alt="Apple Icon" style={{ width: '20px', marginRight: '8px' }} />
-            Continue with Apple
-          </button>
-          <button className="btn btn-outline-dark mb-2 d-flex align-items-center justify-content-center rounded-pill">
-            <img src={googleIcon} alt="Google Icon" style={{ width: '20px', marginRight: '8px' }} />
-            Continue with Google
-          </button>
-        </div>
+        {/* Social Login Buttons */}
+                <div className="d-flex flex-column mb-3">
+                  <button 
+                    className="btn btn-light d-flex align-items-center mb-2" 
+                    style={{ 
+                      border: '1px solid #ccc', 
+                      borderRadius: '30px', 
+                      padding: '10px 20px' 
+                    }}
+                  >
+                    <img src={appleIcon} alt="Apple Icon" style={{ width: '20px', marginRight: '10px' }} />
+                    Continue with Apple
+                  </button>
+                  <button 
+                    className="btn btn-light d-flex align-items-center" 
+                    style={{ 
+                      border: '1px solid #ccc', 
+                      borderRadius: '30px', 
+                      padding: '10px 20px' 
+                    }}
+                  >
+                    <img src={googleIcon} alt="Google Icon" style={{ width: '20px', marginRight: '10px' }} />
+                    Continue with Google
+                  </button>
+                </div>
 
         {/* Horizontal line with 'or' */}
         <div className="text-center mb-4">
