@@ -101,7 +101,7 @@ const SignUpPage = ({ onNavigate }) => {
         Create Account
       </button>
       <p className="mt-3">
-        Already have an account? <a href="#" style={{ color: '#008CBA' }}>Log In</a>
+        Already have an account? <a href="#" style={{ color: '#008CBA' }} onClick={() => onNavigate('login')}>Log In</a>
       </p>
     </div>
   );
