@@ -60,7 +60,9 @@ const Navbar = ({ onNavigate }) => {
               style={{ maxWidth: '200px' }}
             />
           </form>
-          <button className="btn btn-outline-primary me-2">Log In</button>
+          <button className="btn btn-outline-primary me-2"
+          onClick={() => onNavigate('login')}
+          >Log In</button>
           <button
             className="btn btn-primary"
             onClick={() => onNavigate('signup')}
